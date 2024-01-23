@@ -99,7 +99,7 @@
         }
 
         // Event delegation: Add click event listener to the parent container of buttons
-        document.getElementById('buttonContainer').addEventListener('click', function (event) {
+        document.querySelector('.button-container').addEventListener('click', function (event) {
             var button = event.target;
 
             // Check if the clicked element is a button
@@ -129,7 +129,7 @@
 </script>
 
 <!-- Container for buttons and descriptions -->
-<div class="button-container" id="buttonContainer">
+<div class="button-container">
     <div class="button-description">
         <button id="Able" class="button" data-description="Capable and skillful.">Able</button>
         <p class="description" id="description1">Capable and skillful.</p>
